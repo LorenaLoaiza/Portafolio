@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(Img/fondo.png);
+    background-size: cover;
+}
+
+/*Navegador*/
+.navbar .logo {
+    cursor: pointer;
+}
+.navegador {
+    padding-right: 30px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 5px 10px rgb(209, 250, 146);
+}
+
+/*Header*/
+.header .logo img {
+    max-width: 100px;
+    width: 100%;
+    transition: all ease .5s;
+}
+
+/* HOVER = el cursor sobre el logo tenga un efecto*/
+.header .logo img:hover {
+    transform:translate(-50%,-50%);
+    cursor: pointer;
+}
+
+.header .barra li {
+    display: inline-block;
+    padding: 0 20px;
+    transition: all ease .5s;
+}
+
+.header .barra li:hover {
+    transform: scale(1.1);
+
+}
+
+.header .barra a {
+    font-size: 20px;
+    color:greenyellow;
+    text-decoration: none;
+    /* transition: all ease .5s; */
+
+}
+
+.header .barra li a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.header .btn {
+    font-weight: 800;
+    color: black;
+    padding: 10px 15px;
+    background: black;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all ease .5s;
+
+}
+
+.header .btn:hover {
+    background-color: black;
+    color: greenyellow;
+    transform: scale(1.1);
+}
+
+.header .btn {
+    font-weight: 500;
+    color:black;
+    padding: 5px 30px;
+    background: greenyellow;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all ease .5s;
+}
+
+@media (max-width: 768px) { /* para ajustar estilos en pantallas más pequeñas */
+    .section {
+        width: calc(100% - 40px);
+    }
+}
+
+/* Contenedor*/
+.section {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    width: calc(70% - 10px);margin-left: 15%;
+    height: 10%; 
+    text-align: center;
+    box-shadow: 0px 5px 10px greenyellow;
+    display:flex;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.soy{
+    background-color:greenyellow;
+    color: white;
+    box-shadow: 0 0 20px greenyellow;
+    width:70;
+    padding:40px;
+    margin:auto;
+
+}
+
+.section h2 {
+    font-size: 24px;
+    color:black;
+    margin-top: 0;
+    text-align:center;
+}
+
+.section h4 {
+    font-size: 20px;
+    color: black;
+    margin-top: 0;
+}
+
+.img1{
+    width: 50%;
+    height: 400px;
+}
+
+/*preyectos*/
+.btn-neon{
+    position: relative;
+    display: flex; 
+    justify-content: center;
+    padding: 0. 4rem 1rem;
+    width: 500px;
+    margin: 0 auto;
+    padding: 15px 15px;
+    color:black;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 18px;
+    overflow: hidden;
+    transition: 0.2s;
+    background-color:greenyellow
+}
+
+.btn-neon:hover{
+    background:greenyellow;
+    box-shadow: 0 0 10px greenyellow, 0 0 10px greenyellow, 0 0 10px greenyellow;
+    transition-delay: 1s;
+}
+
+.btn-neon span{
+    position: absolute;
+    display: block;
+}
+
+#span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent, black);
+}
+
+.btn-neon:hover #span1{
+    left: 100%;
+    transition: 1s;
+}
+
+#span3{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,black);
+}
+
+.btn-neon:hover #span3{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5;
+}
+
+#span2{
+    top: -100% ;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,black);
+}
+
+.btn-neon:hover #span2{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+#span4{
+    bottom: -100% ;
+    left: 2px;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,black);
+}
+
+.btn-neon:hover #span4{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 75s;
+}
+
+
+
+/*Card*/
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+}
+
+.card{
+    padding: 30px;
+    margin: 2%;
+    width: 1000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    box-shadow: 0 2px 3px 0px rgba( 0, 0, 0, 0.25);
+    border-radius: 3px;
+    transition: .2s all;
+    border-color: #000;
+}
+
+.card1{
+    background-image: url(Img/calculadora.jpg);
+}
+
+.card2{
+    background-image: url(Img/ppt.jpg);
+}
+
+.card3{
+    background-image: url(Img/ejercicios.jpg);
+}
+
+.h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    color:  greenyellow;
+}
+
+.btnc{
+    font-size: 15px;
+    text-transform: uppercase;
+    display: block;
+    margin:0 auto;
+    margin-top:  230px;
+    cursor: pointer;
+}
+
+.btnc{
+    background-color: black;
+    background: linear-gradient(to rigth, black 0%, rgb(0, 0, 0) 50%, black 100%);
+    background-size: 200% ;
+    background-position: 100%;
+    color: greenyellow;
+    padding: 7px 30px;
+    border-radius: 30px;
+    transition: all 0.7s;
+    border: solid 1px greenyellow;
+}
+
+.btnc:hover{
+    background: greenyellow;
+    background: linear-gradient(to
+     rigth, #000000 0%, #000000 50%, #000000 100%);
+    background-size: 200%;
+    background-position: 100%;
+    box-shadow: 0 0 20px #0000;
+    color: black;
+    border: solid 1px black;
+}
+
+.container:hover .card{
+    filter: blur(3px);
+    opacity: .1;
+    transform: scale(.98);
+    box-shadow: none;
+}
+
+.container:hover .card:hover{
+    transform: scale(1);
+    filter: blur(0px);
+    opacity: 1;
+    box-shadow: 0 0 20px greenyellow; 
+}
+
+/*Carrusel*/
+.carrusel {
+    margin: auto;
+    width: 100%;
+    padding: 30px;
+  }
+  
+  ul.li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  ul.slider {
+    position: relative;
+    width: 800px;
+    height: 300px;
+  }
+  
+  ul.slider li {
+    position: absolute;
+    left: 250px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity 0.5s;
+  }
+  
+  ul.slider li img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  ul.slider li:first-child {
+    opacity: 1; /*Muestras el primer <li>*/
+  }
+  
+  ul.slider li:target {
+    opacity: 1; /*Muestra el <li> del enlace que pulsemos*/
+  }
+  
+  .menu {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .menu li {
+    display: inline-block;
+    text-align: center;
+    scale: 0.4;
+  }
+
+  .menu li:hover{
+    transform: scale(2);
+  }
+  
+  .menu li a {
+    display:inline-flex;
+    text-decoration: none;
+    background-color: greenyellow;
+    padding: 10px;
+    width: 10px;
+    height: 10px;
+    font-size: 20px;
+    border-radius: 100%;
+    transform: scale(.98);
+  }
+
+
+/*Redes*/
+.redes{
+    height: 40px;
+    padding: 0;
+    box-shadow: 0px 5px 10px rgb(209, 250, 146);
+}
+
+.redes h3{
+    text-align: center;
+    font-weight: 400;
+    color: greenyellow;
+    font: size 24px;
+}
+
+.sc{
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.sc li{
+    display: inline-block;
+}
+
+.sc a{
+    padding: 10px;
+}
+
+
+/*footer*/
+.footer {
+    background-color: #000;
+    color:greenyellow;
+    padding: 10px;
+    text-align: center;
+}
+
